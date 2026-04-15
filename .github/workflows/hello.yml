@@ -4,8 +4,8 @@ on: push
 
 jobs:
   say-hello:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name:Print message
-        run:echo "hello, Github Actions!"
+      - name: Print message
+        run: echo "hello, Github Actions!"
