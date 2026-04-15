@@ -1,0 +1,11 @@
+name: My FIrst Workflow
+
+on: push
+
+jobs:
+  say-hello:
+    runs-on: ubantu-latest
+
+    steps:
+      - name:Print message
+        run:echo "hello, Github Actions!"
