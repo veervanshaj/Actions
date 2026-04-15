@@ -1,7 +1,11 @@
 // workflow-> file whcih store Instruction/steps for Ci/cd
 /**
- * event -- when to run this workflow like when push ,pr .main(specific branch) , ona perticular schdule or any specific condition
-        using on keyword
+ * event -- when to run this workflow like when push ,pr ,main(specific branch) , on a particular schdule or any specific condition
+        using on keyword 
+        if have to push then use keyword push and if need to pull then then use pull_request
+        * for multipal events on:[add all the events ]
+        * you can schdule events usinh cron job
+        * 
  * Job -- what to do 
  * Steps -- it is a list          //cooking instrauctions  
  *
