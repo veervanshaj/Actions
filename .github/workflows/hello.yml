@@ -1,4 +1,4 @@
-name: My FIrst Workflow
+name: My First Workflow
 
 on: push
 
@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
-        run: echo "hello, Github Actions!"
-        run: echo "veerrrrrrrrrrrrrrrrrrrrrrrrrrrr vanshaj"
+      - name: Print messages
+        run: |
+          echo "Hello, GitHub Actions!"
+          echo "Veer Vanshaj"
