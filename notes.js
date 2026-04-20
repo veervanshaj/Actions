@@ -15,3 +15,9 @@
  * push->workflow->start job(VM create can be ubantu windos mac etc)->job Completed -> steps
  * Each job have independent VM
  */
+
+/**
+ * Day 2 
+ * by default jobs run parllery
+ * needs:used to run job in sequence 
+ */
