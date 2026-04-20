@@ -16,6 +16,8 @@ jobs:
           node-version: 18
       - name: check node version
         run: node -v
+      - name: check npm version
+        run: npm -v
       # - name: list file
         # run: ls
 # name: My First Workflow
