@@ -20,4 +20,8 @@
  * Day 2 
  * by default jobs run parllery
  * needs:used to run job in sequence 
+ * actions: are resusable code provied by github to perfom comman task like clone repo,setup node
+ * when new job create new vm it have no enviremnt so need to setup it 
+ * repo clone -> node setup -> depencency -> nom run test
+ * THIS CAN be automoate usising action -> uses 
  */
