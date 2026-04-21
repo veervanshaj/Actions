@@ -4,7 +4,7 @@
   "main": "notes.js",
   "scripts": {
     
-    "test": "exit"
+    "test": "exit code 1"
   },
   "keywords": [],
   "author": "",
