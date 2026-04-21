@@ -1,6 +1,8 @@
 name: My First Workflow
 
-on: push
+# on: push
+on: 
+  pull_request:
 
 jobs:
   test: #job 1
@@ -16,8 +18,10 @@ jobs:
           node-version: 18
       - name: check node version
         run: node -v
-      - name: check npm version
-        run: npm -v
+      - name: dounload dependncy
+        run: npm i
+      - name: run test
+        run: npm run test    
       # - name: list file
         # run: ls
 # name: My First Workflow
