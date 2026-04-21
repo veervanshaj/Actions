@@ -1,8 +1,8 @@
 name: My First Workflow
 
-# on: push
-on: 
-  pull_request:
+on: push
+# on: 
+#   pull_request:
 
 jobs:
   test: #job 1
@@ -21,7 +21,15 @@ jobs:
       - name: dounload dependncy
         run: npm i
       - name: run test
-        run: npm run test    
+        run: npm run test  
+  deply-app: #job2
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: aap deply
+        run: echo "chalaaa"
+    
+
       # - name: list file
         # run: ls
 # name: My First Workflow

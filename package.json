@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "notes.js",
   "scripts": {
-    "test": "echo running test/ test succesfull"
+    
+    "test": "exit"
   },
   "keywords": [],
   "author": "",
