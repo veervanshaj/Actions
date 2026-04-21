@@ -25,3 +25,4 @@
  * repo clone -> node setup -> depencency -> nom run test
  * THIS CAN be automoate usising action -> uses 
  */
+// "test": "exit code 1"
