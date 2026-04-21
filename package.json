@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "notes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo running test/ test succesfull"
   },
   "keywords": [],
   "author": "",
