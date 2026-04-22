@@ -1,9 +1,9 @@
 // import globals from 'globals';
 
 export default [
-  {
-    ignores: ['eslint.config.js'], // ✅ ignore config file
-  },
+  // {
+  //   ignores: ['eslint.config.js'], // ✅ ignore config file
+  // },
   {
     files: ['**/*.js'],
     languageOptions: {
