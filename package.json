@@ -2,8 +2,9 @@
   "name": "git_actions",
   "version": "1.0.0",
   "main": "notes.js",
+  "type": "module",
   "scripts": {
-    
+    "lint": "eslint .",
     "test": "echo running test/ test succesfull"
   },
   "keywords": [],

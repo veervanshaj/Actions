@@ -1,0 +1,9 @@
+export default [
+  {
+    ignores: ['eslint.config.js'], // ✅ ignore it
+  },
+  {
+    files: ['**/*.js'],
+    // rest config
+  }
+];

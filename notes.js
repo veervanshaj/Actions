@@ -26,3 +26,11 @@
  * THIS CAN be automoate usising action -> uses 
  */
 // "test": "exit code 1"
+
+/**
+ * HW
+ * CI workflow
+ * 1) check linting   by eslint ---it is basly 
+ * 2) test run
+ * 3) code building 
+ */

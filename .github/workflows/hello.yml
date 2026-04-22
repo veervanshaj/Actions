@@ -1,11 +1,9 @@
 name: My First Workflow
 
 on: push
-# on: 
-#   pull_request:
 
 jobs:
-  test: #job 1
+  lint: #job 1
     runs-on: ubuntu-latest
 
     steps:
@@ -21,14 +19,75 @@ jobs:
         run: node -v
       - name: dounload dependncy
         run: npm i
+
+      - name: Lint code
+        run: npm run lint
+      - name: kaya lint chala
+        run: echo "challaaa"
+  test:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: checkout code #setup project /clon
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
       - name: run test
         run: npm run test  
-  deply-app: #job2
+      - name: dounload dependncy
+        run: npm i
+      
+  build: #job3
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - name: aap deply
-        run: echo "chalaaa"
+      - name: checkout code #setup project /clon
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: kaya build chala
+        run: echo "chalaaaaa"
+# name: My First Workflow
+
+# on: push
+# # on: 
+# #   pull_request:
+
+# jobs:
+#   test: #job 1
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: checkout code #setup project /clon
+#         uses: actions/checkout@v4
+        
+#       - name: Setup node
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 18
+#           cache: "npm"
+#       - name: check node version
+#         run: node -v
+#       - name: dounload dependncy
+#         run: npm i
+
+#       - name: Lint code
+#         run: npm run lint
+
+#       - name: run test
+#         run: npm run test  
+#       - name: build
+#         run: npm run dev
+#   deply-app: #job2
+#     runs-on: ubuntu-latest
+#     needs: test
+#     steps:
+#       - name: aap deply
+#         run: echo "chalaaa"
     
 
       # - name: list file
