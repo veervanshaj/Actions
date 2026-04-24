@@ -1,0 +1,29 @@
+name: My actifact Workflow
+
+on: push
+
+jobs:
+  job1: #job 1
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: create file
+        run: echo "file from job1" > file.txt
+      - name: checkout code #setup project /clon
+        uses: actions/upload-artifact@v4
+        with:
+          name: file
+          path: file.txt
+           
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - name: get file
+        uses: actions/dounload-artifact@v4
+        with:
+          name: file
+          path: file.txt
+      - name: see text file
+        run: cat file.txt
+      

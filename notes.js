@@ -34,3 +34,11 @@
  * 2) test run
  * 3) code building 
  */
+
+/**
+ * Day
+ * Artifacts
+ * It is a storgae to share data between  multipal jobs
+ * you can upload and dounload it across jobs
+ * upload: actions/upload-artifact
+ */
